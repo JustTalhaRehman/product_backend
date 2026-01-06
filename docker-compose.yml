@@ -1,0 +1,15 @@
+version: "3"
+services:
+  backend:
+    build: ./product_backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./product_backend/.env
+
+  frontend:
+    build: ./product_frontend
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
