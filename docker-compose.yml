@@ -1,4 +1,4 @@
-kservices:
+services:
   backend:
     image: talharehman2727/product_backend:latest
     ports:
