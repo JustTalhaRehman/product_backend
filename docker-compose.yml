@@ -1,6 +1,6 @@
-services:
+kservices:
   backend:
-    image: backend:latest
+    image: talharehman2727/product_backend:latest
     ports:
       - "3000:3000"
     env_file:
@@ -9,3 +9,4 @@ services:
 networks:
   default:
     name: product_backend_default
+
