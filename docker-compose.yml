@@ -1,6 +1,6 @@
 services:
   backend:
-    image: talharehman2727/product_backend:latest
+    image: talharehman2727/product_backend:1.0.0
     ports:
       - "3000:3000"
     env_file:
